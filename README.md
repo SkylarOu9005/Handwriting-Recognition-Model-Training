@@ -94,9 +94,8 @@ pip install tensorflow numpy matplotlib gradio ipywidgets
 
 ---
 
-## 開發者
-
-**開發者**：歐靜嬡 (Skylar Ou) 
-**GitHub repository**：[Handwriting-Recognition-Model-Training](https://www.google.com/search?q=https://github.com/SkylarOu9005/Handwriting-Recognition-Model-Training)
-**開發日期**：2025/03/10
+## 開發者與專案資訊
+* **開發者**：歐靜嬡 (Skylar Ou) 
+* **GitHub repository**：[Handwriting-Recognition-Model-Training](https://www.google.com/search?q=https://github.com/SkylarOu9005/Handwriting-Recognition-Model-Training)
+* **開發日期**：2025/03/10
 
