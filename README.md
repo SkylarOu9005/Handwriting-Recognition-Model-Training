@@ -89,6 +89,9 @@ pip install tensorflow numpy matplotlib gradio ipywidgets
 2. 依序執行 Jupyter Notebook 內的單元格進行資料處理、模型訓練 。
 3. 啟動最後一個單元格的 Gradio 區塊即可開啟 Web UI 進行實際手寫測試 ！
 
+### 結果範例
+<img width="1566" height="798" alt="image" src="https://github.com/user-attachments/assets/cc1a08be-0ad7-43d0-81b9-a10d12eef34b" />
+
 ---
 
 ## 作者與致謝
