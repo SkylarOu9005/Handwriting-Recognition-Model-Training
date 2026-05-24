@@ -6,18 +6,11 @@
 
 ##  專案成果
 
-* 
 **準確度**：經過模型架構與超參數的多次迭代測試，最終在測試集上達到 **98.21%** 的資料正確率 。
 
-
-* 
 **防止過擬合之配套措施**：在模型中插入 **Dropout 層**，並導入 **EarlyStopping 回呼函數**，成功平滑訓練曲線並確保泛化能力 。
 
-
-* 
 **即時互動的手寫畫布**：捨棄傳統僅能用程式碼輸入的方式，透過 Gradio 打造直覺的手寫測試介面 。
-
-
 
 ---
 
@@ -29,19 +22,12 @@
 
 實驗證實，神經元數量**逐層遞減**的結構能取得更好的辨識效果 。最終採用的最佳架構如下 ：
 
-* 
 **輸入層 (Input Layer)**：784 個神經元（將 $28 \times 28$ 的灰階圖片攤平）。
 
-
-* 
 **隱藏層 1 (Hidden Layer 1)**：784 個神經元，使用 `ReLU` 激發函數 ，後接 `Dropout(0.3)` 隨機丟棄 30% 神經元 。
 
-
-* 
 **隱藏層 2 (Hidden Layer 2)**：392 個神經元，使用 `ReLU` 激發函數 ，後接 `Dropout(0.3)` 。
 
-
-* 
 **輸出層 (Output Layer)**：10 個神經元，使用 `Softmax` 激發函數，輸出各數字的機率分佈 。
 
 
@@ -80,15 +66,10 @@
 
 透過 `matplotlib` 繪製的訓練歷程圖顯示，在 EarlyStopping 的保護下，訓練在第 10 個 Epoch 時提前停止（因驗證集準確率 `val_accuracy` 已達到穩定飽和，約在 98.00% 上下波動），有效地避免了後續可能引發的過擬合現象 。
 
-* 
 **訓練集準確率 (Accuracy)**：~ 98.92% 
 
-
-* 
 **驗證集準確率 (Val Accuracy)**：~ 98.00% 
 
-
-* 
 **最終測試集總評量 (Test Accuracy)**：**98.21%** 
 
 
@@ -114,9 +95,5 @@ pip install tensorflow numpy matplotlib gradio ipywidgets
 
 ## 作者與致謝
 
-* 
 **開發者**：歐靜嬡 (Skylar Ou) 
-
-
-* 
-**GitHub 倉庫**：[Handwriting-Recognition-Model-Training](https://www.google.com/search?q=https://github.com/SkylarOu9005/Handwriting-Recognition-Model-Training)
+**GitHub repository**：[Handwriting-Recognition-Model-Training](https://www.google.com/search?q=https://github.com/SkylarOu9005/Handwriting-Recognition-Model-Training)
