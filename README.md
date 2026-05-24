@@ -6,11 +6,11 @@
 
 ##  專案成果
 
-**準確度**：經過模型架構與超參數的多次迭代測試，最終在測試集上達到 **98.21%** 的資料正確率 。
+* **準確度**：經過模型架構與超參數的多次迭代測試，最終在測試集上達到 **98.21%** 的資料正確率 。
 
-**防止過擬合之配套措施**：在模型中插入 **Dropout 層**，並導入 **EarlyStopping 回呼函數**，成功平滑訓練曲線並確保泛化能力 。
+* **防止過擬合之配套措施**：在模型中插入 **Dropout 層**，並導入 **EarlyStopping 回呼函數**，成功平滑訓練曲線並確保泛化能力 。
 
-**即時互動的手寫畫布**：捨棄傳統僅能用程式碼輸入的方式，透過 Gradio 打造直覺的手寫測試介面 。
+* **即時互動的手寫畫布**：捨棄傳統僅能用程式碼輸入的方式，透過 Gradio 打造直覺的手寫測試介面 。
 
 ---
 
@@ -22,13 +22,13 @@
 
 實驗證實，神經元數量**逐層遞減**的結構能取得更好的辨識效果 。最終採用的最佳架構如下 ：
 
-**輸入層 (Input Layer)**：784 個神經元（將 $28 \times 28$ 的灰階圖片攤平）。
+* **輸入層 (Input Layer)**：784 個神經元（將 $28 \times 28$ 的灰階圖片攤平）。
 
-**隱藏層 1 (Hidden Layer 1)**：784 個神經元，使用 `ReLU` 激發函數 ，後接 `Dropout(0.3)` 隨機丟棄 30% 神經元 。
+* **隱藏層 1 (Hidden Layer 1)**：784 個神經元，使用 `ReLU` 激發函數 ，後接 `Dropout(0.3)` 隨機丟棄 30% 神經元 。
 
-**隱藏層 2 (Hidden Layer 2)**：392 個神經元，使用 `ReLU` 激發函數 ，後接 `Dropout(0.3)` 。
+* **隱藏層 2 (Hidden Layer 2)**：392 個神經元，使用 `ReLU` 激發函數 ，後接 `Dropout(0.3)` 。
 
-**輸出層 (Output Layer)**：10 個神經元，使用 `Softmax` 激發函數，輸出各數字的機率分佈 。
+* **輸出層 (Output Layer)**：10 個神經元，使用 `Softmax` 激發函數，輸出各數字的機率分佈 。
 
 
 
@@ -39,12 +39,10 @@
 
 ### 2. 優化器與損失函數微調
 
-* 
-**損失函數 (Loss Function)**：採用了適合多分類任務的 `categorical_crossentropy` 函數。
+* **損失函數 (Loss Function)**：採用了適合多分類任務的 `categorical_crossentropy` 函數。
 
 
-* 
-**優化器 (Optimizer)**：早期使用 `SGD(lr=0.001)` 時，模型準確率僅有 91.71% 。隨後將其更換為具備自動調整學習率特性的 **`Adam` 優化器**，使辨識率大幅攀升 。
+* **優化器 (Optimizer)**：早期使用 `SGD(lr=0.001)` 時，模型準確率僅有 91.71% 。隨後將其更換為具備自動調整學習率特性的 **`Adam` 優化器**，使辨識率大幅攀升 。
 
 
 
@@ -96,4 +94,6 @@ pip install tensorflow numpy matplotlib gradio ipywidgets
 ## 作者與致謝
 
 **開發者**：歐靜嬡 (Skylar Ou) 
+
+
 **GitHub repository**：[Handwriting-Recognition-Model-Training](https://www.google.com/search?q=https://github.com/SkylarOu9005/Handwriting-Recognition-Model-Training)
